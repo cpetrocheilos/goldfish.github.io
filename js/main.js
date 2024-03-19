@@ -25,21 +25,10 @@
         }
     });
     
-    var $img = $('<img/>').attr({
-        'id': 'cursor'
-      });
-      
-      $(document).on('touchstart', function (e) {
-      
-      
-        var touch = e.originalEvent.touches["0"];
-      
-        $img.css({
-          top: touch.clientY - 25,
-          left:  touch.clientX - 25,
-          display: 'block'
-        });
-      
+    $(".img-fluid").on('click', function(e){
+        var self = $(this);
+        var name = self.data('name'); // or src = self.attr('src');
+        localStorage.setItem('the-img', name or src);
       });
       
     //   $img.appendTo('body');
