@@ -25,7 +25,25 @@
         }
     });
     
-    
+    var $img = $('<img/>').attr({
+        'id': 'cursor',
+        'src': 'http://www.nicenicejpg.com/50'
+      });
+      
+      $(document).on('touchstart', function (e) {
+      
+      
+        var touch = e.originalEvent.touches["0"];
+      
+        $img.css({
+          top: touch.clientY - 25,
+          left:  touch.clientX - 25,
+          display: 'block'
+        });
+      
+      });
+      
+    //   $img.appendTo('body');
     // Dropdown on mouse hover
     const $dropdown = $(".dropdown");
     const $dropdownToggle = $(".dropdown-toggle");
