@@ -24,14 +24,8 @@
             $('.navbar').removeClass('sticky-top shadow-sm');
         }
     });
-    
-    $(".img-fluid").on('click', function(e){
-        var self = $(this);
-        var name = self.data('name'); // or src = self.attr('src');
-        localStorage.setItem('the-img', name or src);
-      });
       
-    //   $img.appendTo('body');
+    $img.appendTo('body');
     // Dropdown on mouse hover
     const $dropdown = $(".dropdown");
     const $dropdownToggle = $(".dropdown-toggle");
