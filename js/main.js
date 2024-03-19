@@ -26,8 +26,7 @@
     });
     
     var $img = $('<img/>').attr({
-        'id': 'cursor',
-        'src': 'http://www.nicenicejpg.com/50'
+        'id': 'cursor'
       });
       
       $(document).on('touchstart', function (e) {
